@@ -79,5 +79,5 @@ npm run dev
 
 ## Contributing
 
-The goal of this project was to incorporate more advanced UI components and functionality (for instance the nav bar / project links / contact page.) Some of the more advanced functionality such as the 3d Earth Component was already provided.
+The goal of this project was to incorporate more advanced UI components and functionality (for instance the nav bar / project links / contact page.) Some of the more advanced functionality such as the 3d Earth Component was already provided, in addition to the standard styles.css file, however I used tailwind throughout the project.
 
