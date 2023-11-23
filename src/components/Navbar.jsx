@@ -19,7 +19,7 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0,0)
         }}>
-          <img src='src\assets\pw-high-resolution-logo-transparent.png' alt="logo" className="w-9 h-9 object-contain" />
+          <img src='https://github.com/wells1989/React-Portfolio-Website/blob/main/src/assets/pw-high-resolution-logo-transparent.png?raw=true' alt="logo" className="w-9 h-9 object-contain" />
         </Link>
 
         <div
