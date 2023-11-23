@@ -25,8 +25,8 @@ module.exports = {
         xl: '1440px',
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-        "gold-pattern": "url('src/assets/tech/golden-background.jpg')"
+        "hero-pattern": "url('https://github.com/wells1989/React-Portfolio-Website/blob/main/src/assets/herobg.png?raw=true')",
+        "gold-pattern": "url('https://github.com/wells1989/React-Portfolio-Website/blob/main/src/assets/tech/golden-background.jpg?raw=true')"
         // e.g. now can use className="bg-gold-pattern" 
       },
     },
