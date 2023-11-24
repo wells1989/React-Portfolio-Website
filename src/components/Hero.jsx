@@ -12,7 +12,7 @@ const Hero = () => {
             </div>
 
             <div className=" flex flex-col items-center justify-center text-center">
-              <h1 className={`${styles.heroHeadText} pt-10 text-base sm:text-lg md:text-xl`}>I'm Paul, <span className="underline" 
+              <h1 className={`${styles.heroHeadText} pt-5 text-base sm:text-lg md:text-xl`}>I'm Paul, <span className="underline" 
               > a Full Stack Developer</span></h1>
                 <ul className={`${styles.heroSubText} text-xs sm:text-base md:text-lg list-none`}>
                   <br></br>
