@@ -3,7 +3,7 @@ import { styles } from '../styles';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[700px] md:h-[850px] mx-auto">
           <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
           >
             <div className="flex flex-col justify-center items-center mt-5">
@@ -12,9 +12,9 @@ const Hero = () => {
             </div>
 
             <div className=" flex flex-col items-center justify-center text-center">
-              <h1 className={`${styles.heroHeadText} pt-5 text-base sm:text-lg md:text-xl`}>I'm Paul, <span className="underline" 
+              <h1 className={`${styles.heroHeadText} pt-3 text-base sm:text-lg md:text-lg`}>I'm Paul, <span className="underline" 
               > a Full Stack Developer</span></h1>
-                <ul className={`${styles.heroSubText} text-xs sm:text-base md:text-lg list-none`}>
+                <ul className={`${styles.heroSubText} text-xs sm:text-base md:text-lg list-none m-5`}>
                   <br></br>
                   
                   <li>
