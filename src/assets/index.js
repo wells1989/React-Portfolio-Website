@@ -6,20 +6,13 @@ import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-// DEV ONLY
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 // work exp
 import meta from "./company/meta.png";
 import cambridge from "./company/cambridge.png"
 import rsc from "./company/rsc.png"
 import codcademy from "./company/codcademy.png"
 import udemy from "./company/udemy.png"
+import codestars from "./company/codestars.jpg"
 
 // technologies
 import bootstrap from "./tech/bootstrap.png"
@@ -41,7 +34,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import vscode from "./tech/vscode.png"
+import vscode from "./tech/vscode.png";
+import django from "./tech/django.png";
+import jquery from "./tech/jquery.png";
+import chai from "./tech/chai.png";
+import sqlite from "./tech/sqlite.jpeg";
+
 
 // projects
 import todoList from './todoList.jpg'
@@ -59,6 +57,9 @@ import SQL2 from './SQL2.jpg';
 import SQL3 from './SQL3.jpg';
 import UFC from './UFC.png';
 import slotmachine from './slotmachine.jpg';
+import async_scraper from './async_scraper.avif';
+import expense_tracker from './expense_tracker.png';
+import marketplace from './marketplace.png';
 
 // professional websites
 import linkedin from './linkedin.png'
@@ -80,6 +81,9 @@ export {
   SQL1,
   SQL2,
   SQL3,
+  async_scraper,
+  expense_tracker,
+  marketplace,
 
   // technologies
   bootstrap,
@@ -102,6 +106,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  django,
+  jquery,
+  chai,
+  sqlite,
 
   // work exp
   cambridge,
@@ -109,6 +117,7 @@ export {
   codcademy,
   udemy,
   meta,
+  codestars,
 
   // general
   backend,

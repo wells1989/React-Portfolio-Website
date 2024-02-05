@@ -9,6 +9,7 @@ import {
     codcademy,
     udemy,
     rsc,
+    codestars,
 
     // technologies
     javascript,
@@ -25,9 +26,13 @@ import {
     Mocha,
     postgreSQL,
     python,
+    django,
     sql,
     vscode,
     github,
+    jquery,
+    chai,
+    sqlite,
 
     // projects
     todoList,
@@ -45,6 +50,9 @@ import {
     SQL1,
     SQL2,
     SQL3,
+    async_scraper,
+    expense_tracker,
+    marketplace,
   
     web, 
   } from "../assets";
@@ -85,12 +93,24 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "bootstrap",
+      icon: bootstrap,
     },
     {
       name: "TypeScript",
       icon: typescript,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "JQuery",
+      icon: jquery,
     },
     {
       name: "React JS",
@@ -101,44 +121,48 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "bootstrap",
-      icon: bootstrap,
-    },
-    {
-      name: "Mocha",
-      icon: Mocha,
-    },
-    {
-      name: "postgreSQL",
-      icon: postgreSQL,
     },
     {
       name: "python",
       icon: python,
     },
     {
+      name: 'Django',
+      icon: django,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Mocha",
+      icon: Mocha,
+    },
+    {
+      name: "Chai",
+      icon: chai,
+    },
+    {
+      name: "postgreSQL",
+      icon: postgreSQL,
+    },
+    {
       name: "sql",
       icon: sql,
     },
     {
+      name: "SQLite",
+      icon: sqlite,
+    },
+    {
       name: "github",
       icon: github,
+    },
+    {
+      name: "git",
+      icon: git,
     },
     {
       name: "vsCode",
@@ -148,11 +172,37 @@ import {
   
   const experiences = [
     {
+      title: "Django Masterclass : Build 9 Real World Django Projects",
+      company_name: "Udemy",
+      icon: udemy,
+      iconBg: "#383E56",
+      date: "February 2024",
+      points: [
+        "Developing Full Stack MVT architecture with Django",
+        "Creating dynamic and responsive UI's with JQuery to adjust the DOM",
+        "Database design and modelling with SQLite, utilsing Django's ORM to allow Full Stack integration",
+        "Building Full Stack applications with Django, including Asynchronous requests with Django Channels / Consumers, static file management and user authentication",
+      ],
+    },
+    {
+      title: "The Complete Python Course | Learn Python by Doing in 2023",
+      company_name: "Codestars",
+      icon: codestars,
+      iconBg: "#383E56",
+      date: "January 2024",
+      points: [
+        "Implementing advanced Python concepts (Asynchronous Python code, OOP and polymorphism, higher order functions and argument mutability",
+        "Expanding Python utility via libraries to incorporate file management, web scraping, server authentication and debugging",
+        "Designing Python based API servers ang managing data / caches",
+        "Developing dynamic web apps with Flask and Jinja 2 templating engine",
+      ],
+    },
+    {
       title: "React with Redux 2023 Course",
       company_name: "Udemy",
       icon: udemy,
       iconBg: "#383E56",
-      date: "October - November 2023",
+      date: "November 2023",
       points: [
         "Covering fundamental and advanced React concepts and state management techniques using Redux.",
         "Developing reusable React components for future projects.",
@@ -164,7 +214,7 @@ import {
       company_name: "Meta",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "September - October 2023",
+      date: "October 2023",
       points: [
         "Developing more advanced knowledge of HTML5 and CSS3 with advanced elements.",
         "Developing mini projects utilising more complex methods, including a final web page under timed conditions.",
@@ -177,7 +227,7 @@ import {
       company_name: "Codcademy",
       icon: codcademy,
       iconBg: "#383E56",
-      date: "Jan -July 2023",
+      date: "July 2023",
       points: [
         "Covering both Front and Back end technologies, focusing on React + JavaScript for Front end, and NodeJS / PostgresSql for the Back end.",
         "Covering a range of practical areas of web development, including Git project management, client and server-side testing, and web security fundamentals.",
@@ -257,6 +307,76 @@ import {
   
   const projects = [
     {
+      name: "Django MultiSeller Marketplace",
+      description:
+        "A Full-Stack app that allows users to sell, purchase and rate products in addition to viewing purchase / sales statistics",
+      tags: [
+        {
+          name: "Python - Django",
+          color: projectColors.python
+        },
+        {
+          name: "HTML",
+          color: projectColors.html,
+        },
+        {
+          name: "TailwindCSS",
+          color: projectColors.css,
+        },
+        {
+          name: "JavaScript",
+          color: projectColors.javascript,
+        },
+        {
+          name: "SQLite",
+          color: projectColors.sql,
+        },
+      ],
+      image: marketplace,
+      source_code_link: "https://github.com/wells1989?tab=repositories",
+    },
+    {
+      name: "Django Expense Tracker",
+      description:
+        "A Django web app that allows users to log / edit expenses and view statistical data with chartJS.",
+      tags: [
+        {
+          name: "Python - Django",
+          color: projectColors.python
+        },
+        {
+          name: "HTML",
+          color: projectColors.html,
+        },
+        {
+          name: "TailwindCSS",
+          color: projectColors.css,
+        },
+        {
+          name: "JavaScript",
+          color: projectColors.javascript,
+        },
+        {
+          name: "SQLite",
+          color: projectColors.sql,
+        },
+      ],
+      image: expense_tracker,
+      source_code_link: "https://github.com/wells1989/Django_expense_tracker",
+    },
+    {
+      name: "Asynchronous Web Scraper",
+      description:
+      "An app to asynchronously scrape websites using the Aiohttp Python Library.",
+      tags: [
+      {
+        name: "Python",
+        color: projectColors.python
+      },
+    ],
+      image: async_scraper,
+      source_code_link: "https://github.com/wells1989/Asynchronous-Website-Scraper",},
+    {
       name: "React-Redux Photo Albums",
       description:
         "Mini-project, using React-Redux for advanced state management.",
@@ -310,7 +430,7 @@ import {
       image: components,
       source_code_link: "https://github.com/wells1989/Components-React-Project",
     },
-    {
+    /*{
       name: "HTML Homepage",
       description:
         "Basic HTML / CSS Homepage under timed conditions.",
@@ -326,7 +446,7 @@ import {
       ],
       image: homepageHTML,
       source_code_link: "https://github.com/wells1989/HTML-CSS-Basic-Homepage",
-    },
+    },*/
     {
       name: "Full Stack Social Media App",
       description:
@@ -525,7 +645,7 @@ import {
     {
       name: "Furniture store database",
       description:
-        "Creating a SQL database.",
+        "Creating a SQL database for a Furniture store.",
       tags: [
         {
           name: "sql",
@@ -538,7 +658,7 @@ import {
     {
       name: "School database",
       description:
-        "Creating a SQL mini-database.",
+        "Creating a SQL database for a school.",
       tags: [
         {
           name: "sql",
@@ -548,7 +668,7 @@ import {
       image: SQL2,
       source_code_link: "https://github.com/wells1989/SQL-School-database-mini-project",
     },  
-    {
+    /* {
       name: "Restaurant database",
       description:
         "Creating a SQL database.",
@@ -560,11 +680,11 @@ import {
       ],
       image: SQL1,
       source_code_link: "https://github.com/wells1989/SQL-Restaurant-menu-mini-project",
-    },  
+    },  */
     {
       name: "Slot machine mini-project",
       description:
-        "Practice project using Python",
+        "Mini project using Python",
       tags: [
         {
           name: "python",
@@ -577,7 +697,7 @@ import {
     {
       name: "Ufc mini-game",
       description:
-        "Practice project using Python",
+        "Mini project using Python",
       tags: [
         {
           name: "python",
