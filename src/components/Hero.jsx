@@ -26,7 +26,7 @@ const Hero = () => {
             </li>
             <br></br>
             <li>
-              I have a varied Portfolio including numerous Front and Back end projects
+              I have a vast freelance Portfolio including numerous Front and Back end projects
             </li>
           </ul>
         </div>
