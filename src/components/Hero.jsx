@@ -18,7 +18,7 @@ const Hero = () => {
             <br></br>
 
             <li>
-              I am a driven and passionate programmer with over a year of hands-on experience across a range of technologies
+              I am a driven and passionate programmer with over 1.5 years of hands-on experience across a range of technologies
             </li>
             <br></br>
             <li>
