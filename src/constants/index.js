@@ -778,5 +778,7 @@ import {
         answer: "The process of creative problem-solving, and the satisfaction you get from solving a difficult bug is second to none. Also the constant learning and pushing your comfort zone allows you to constantly feel challenged / satisfied all at once."
     },
 ];
+
+const softSkills = ['Cross-functional teamwork', 'Client Management', 'Business Strategy / Finance', 'Data Analysis', 'Database integration'];
   
-  export { services, technologies, ASCII_art, experiences, testimonials, projects, professional_experiences, Software_dev, common_questions };
+  export { services, technologies, ASCII_art, experiences, testimonials, projects, professional_experiences, Software_dev, common_questions, softSkills };

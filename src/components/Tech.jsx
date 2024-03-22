@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import SectionWrapper from "../hoc/SectionWrapper";
-import { technologies } from "../constants";
+import { technologies, softSkills } from "../constants";
 import { styles } from '../styles';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Tech = () => {
-  const softSkills = ['Cross-functional teamwork', 'Client Management', 'Business Strategy / Finance', 'Data Analysis', 'Database integration'];
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setIsVisible(true);
+          setHasAnimated(true);
+        }
+      },
+      {
+        threshold: 0
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
 
   return (
-    <div className="relative mx-auto flex flex-col text-center justify-center">
+    <div ref={sectionRef} className="relative mx-auto flex flex-col text-center justify-center">
       <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
 
       <div className='flex flex-row flex-wrap justify-center align-center gap-5 sm:gap-20 mt-10'>
         {softSkills.map((skill, index) => (
-          <p className="text-gold text-[10px] sm:text-[16px] md:text-[24px] font-bold">{skill}</p>))}
+          <p key={index} className="text-gold text-[10px] sm:text-[16px] md:text-[24px] font-bold">{skill}</p>))}
       </div>
 
       <div className='flex flex-row flex-wrap justify-center align-center gap-10 mt-10'>
         <AnimatePresence>
-          {technologies.map((technology, index) => (
+          {isVisible && technologies.map((technology, index) => (
             <motion.div
+              key={index}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
