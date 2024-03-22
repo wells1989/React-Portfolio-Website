@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Hero = () => {
 
   return (
-    <section className="relative w-full h-[400px] sm:h-[600] md:h-[650px] lg:h-[900px] mx-auto">
+    <section className="relative w-full h-[400px] sm:h-[650px] md:h-[700px] lg:h-[900px] mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[70px] md:top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
@@ -15,8 +15,7 @@ const Hero = () => {
         </div>
 
         <div className=" flex flex-col items-center justify-center text-center">
-          <h1 className={`${styles.heroHeadText} pt-3 text-base sm:text-lg md:text-lg`}>I'm Paul, <span className="underline"
-          > a Full Stack Developer</span></h1>
+          <h1 className={`${styles.heroHeadText} pt-5 m-5`}>Paul Wells</h1>
 
           <div className="w-3/4 h-1/2 m-3 relative">
             <video controls autoplay muted className="w=full">
