@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { menu, close, pw_logo } from '../assets';
-import { github } from '../assets';
-import { linkedin } from '../assets';
+import { menu, close, pw_logo, github, linkedin } from '../assets';
 
 const Navbar = () => {
 
@@ -19,7 +17,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0)
           }}>
-          <img src='https://github.com/wells1989/React-Portfolio-Website/blob/main/src/assets/pw-high-resolution-logo-transparent.png?raw=true' alt="logo" className="w-9 h-9 object-contain" />
+          <img src={pw_logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
 
         <div
