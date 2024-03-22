@@ -10,6 +10,7 @@ import {
     udemy,
     rsc,
     codestars,
+    nucamp,
 
     // technologies
     javascript,
@@ -33,6 +34,9 @@ import {
     jquery,
     chai,
     sqlite,
+    python_ascii,
+    js_ascii,
+    sql_ascii,
 
     // projects
     todoList,
@@ -54,17 +58,27 @@ import {
     expense_tracker,
     marketplace,
   
-    web, 
+    web,
+    pw_logo,
+    Software_dev,
   } from "../assets";
   
   export const navLinks = [
     {
-      id: "about",
+      id: "About",
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "Skills",
+      title: "Skills",
+    },
+    {
+      id: "Academic",
+      title: "Academic",
+    },
+    {
+      id: "Professional",
+      title: "Professional",
     },
     {
       id: "contact",
@@ -82,6 +96,21 @@ import {
       icon: backend,
     },
   ];
+
+  const ASCII_art = [
+    {
+      name: "python",
+      icon: python_ascii,
+    },
+    {
+      name: "javascript",
+      icon: js_ascii,
+    },
+    {
+      name: "sql",
+      icon: sql_ascii
+    },
+  ]
   
   const technologies = [
     {
@@ -172,6 +201,18 @@ import {
   
   const experiences = [
     {
+      title: "NuCamp: Backend bootcamp with Python, SQL and DevOps",
+      company_name: "NuCamp",
+      icon: nucamp,
+      iconBg: "#383E56",
+      date: "Ongoing",
+      points: [
+        "Using OOP and event-driven architecture to create dynamic Python programs",
+        "Dynamic Python GUI visualization and customization",
+        "Weekly group collaboration on Back-end projects",
+      ],
+    },
+    {
       title: "Django Masterclass : Build 9 Real World Django Projects",
       company_name: "Udemy",
       icon: udemy,
@@ -235,6 +276,21 @@ import {
         "Additionally I completed a course on data algorithms and structures, which further solidified my knowledge of programming fundamentals"
       ],
     },
+  ];
+
+  const professional_experiences = [
+    {
+      title: "Junior Full Stack Developer",
+      company_name: "Freelance",
+      icon: pw_logo,
+      iconBg: "#E6DEDD",
+      date: "January 2023 - Current",
+      points: [
+        "Creating dynamic, scalable UI interfaces with React, based on modular MVC architecture and advanced Redux state management.",
+        "Utilizing back-end technology for secure API servers to support Full Stack web applications.",
+        "Building modular python programmes and incorporating object-oriented programming.",
+      ],
+    },
     {
       title: "NON-Tech based: English Teacher",
       company_name: "Cambridge School",
@@ -247,7 +303,6 @@ import {
         "	This position taught me how to work independently, as I solely prepared and organized multiple classes / levels through a comprehensive English curriculum ranging from levels A1-C1.",
       ],
     },
-
     {
       title: "NON-Tech based: Customer Service Financial Advisor",
       company_name: "RSC New Homes",
@@ -261,7 +316,7 @@ import {
         "The role also involved managing 100s of applications simultaneously, which required me to take a proactive, efficient approach to client communication to keep everyone up to speed and satisfied.",
       ],
     },
-  ];
+  ]
   
   const testimonials = [
     {
@@ -668,19 +723,6 @@ import {
       image: SQL2,
       source_code_link: "https://github.com/wells1989/SQL-School-database-mini-project",
     },  
-    /* {
-      name: "Restaurant database",
-      description:
-        "Creating a SQL database.",
-      tags: [
-        {
-          name: "sql",
-          color: projectColors.sql,
-        },
-      ],
-      image: SQL1,
-      source_code_link: "https://github.com/wells1989/SQL-Restaurant-menu-mini-project",
-    },  */
     {
       name: "Slot machine mini-project",
       description:
@@ -708,5 +750,33 @@ import {
       source_code_link: "https://github.com/wells1989/UFC_Minigame-mini-project",
     },  
   ];
+
+  const common_questions = [
+    {
+        id: 1,
+        question: "Why Programming?",
+        answer: "I've always been facinated with designing things, from my obsession with strategic games as a child to my interest in architecture in general. However it wasn't until I discovered software development that I realised I could utilise these strategic planning skills in a real working environment. Software design requires a combination of innovation and pragmatism that fits my personality perfectly."
+    },
+    {
+        id: 2,
+        question: "Where are you based?",
+        answer: "I'm from the UK but am based in Lisbon Portugal."
+    },
+    {
+        id: 3,
+        question: "What are your Specialities?",
+        answer: "I'm very versatile in my abilities, but I've largely trained in Dynamic UIs with React, Back-End APIs with NodeJS, OOP with Python and Django, SQL and NoSQL database creation and integration."
+    },
+    {
+        id: 4,
+        question: "What are your strengths?",
+        answer: "My persistence and discipline when it comes to completing a task, in addition to my no-ego approach to developing myself professionally and personally."
+    },
+    {
+        id: 5,
+        question: "What do you enjoy most about software development?",
+        answer: "The process of creative problem-solving, and the satisfaction you get from solving a difficult bug is second to none. Also the constant learning and pushing your comfort zone allows you to constantly feel challenged / satisfied all at once."
+    },
+];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, ASCII_art, experiences, testimonials, projects, professional_experiences, Software_dev, common_questions };

@@ -1,9 +1,12 @@
 import React from 'react'
 import { styles } from '../styles';
+import { ASCII_art, Software_dev } from "../constants";
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Hero = () => {
+
   return (
-    <section className="relative w-full h-[350px] md:h-[600px] lg:h-[800px] mx-auto">
+    <section className="relative w-full h-[400px] sm:h-[600] md:h-[650px] lg:h-[900px] mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[70px] md:top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
@@ -14,21 +17,30 @@ const Hero = () => {
         <div className=" flex flex-col items-center justify-center text-center">
           <h1 className={`${styles.heroHeadText} pt-3 text-base sm:text-lg md:text-lg`}>I'm Paul, <span className="underline"
           > a Full Stack Developer</span></h1>
-          <ul className={`${styles.heroSubText} text-xs sm:text-base md:text-lg list-none m-3`}>
-            <br></br>
 
-            <li>
-              I am a driven and passionate programmer with over 1.5 years of hands-on experience across a range of technologies
-            </li>
-            <br></br>
-            <li>
-              I have completed both more comprehensive Full Stack courses in addition to specialist courses on the Front and Back end
-            </li>
-            <br></br>
-            <li>
-              I have a vast freelance Portfolio including numerous Front and Back end projects
-            </li>
-          </ul>
+          <div className="w-3/4 h-1/2 m-3 relative">
+            <video controls autoplay muted className="w=full">
+              <source src={Software_dev} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div className='flex flex-row flex-wrap justify-center align-center gap-10 mb-10'>
+            <AnimatePresence>
+              {ASCII_art.map((art, index) => (
+                <motion.div
+                  key={art.name}
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: -100, opacity: 0 }}
+                  transition={{ duration: 2, delay: index * 1 }}
+                  className='w-12 h-12 sm:w-18 sm:h-18 md:w-22 md:h-22'
+                >
+                  <img src={art.icon} alt="tech" className="w-full h-full m-2 relative z-1" />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
 

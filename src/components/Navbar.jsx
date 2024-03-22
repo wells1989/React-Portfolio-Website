@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { menu, close } from '../assets';
+import { menu, close, pw_logo } from '../assets';
 import { github } from '../assets';
 import { linkedin } from '../assets';
 
@@ -19,7 +19,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0)
           }}>
-          <img src='https://github.com/wells1989/React-Portfolio-Website/blob/main/src/assets/pw-high-resolution-logo-transparent.png?raw=true' alt="logo" className="w-9 h-9 object-contain" />
+          <img src={pw_logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
 
         <div
@@ -36,7 +36,7 @@ const Navbar = () => {
             className="w-full h-full object-contain" />
         </div>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10 ">
+        <ul className="list-none hidden md:flex flex-row gap-10 ">
           {navLinks.map((link) => (
             <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text=[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}>
@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
 
         {/*mobile nav bar*/}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'

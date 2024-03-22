@@ -13,6 +13,8 @@ import rsc from "./company/rsc.png"
 import codcademy from "./company/codcademy.png"
 import udemy from "./company/udemy.png"
 import codestars from "./company/codestars.jpg"
+import nucamp from "./company/nucamp.jpg"
+import pw_logo from "./pw_logo.png"
 
 // technologies
 import bootstrap from "./tech/bootstrap.png"
@@ -40,6 +42,10 @@ import jquery from "./tech/jquery.png";
 import chai from "./tech/chai.png";
 import sqlite from "./tech/sqlite.jpeg";
 
+// ASCII art
+import js_ascii from "./tech/js_ascii_art.png"
+import python_ascii from "./tech/python_ascii.png"
+import sql_ascii from "./tech/sql_ascii_art.png"
 
 // projects
 import todoList from './todoList.jpg'
@@ -62,7 +68,11 @@ import expense_tracker from './expense_tracker.png';
 import marketplace from './marketplace.png';
 
 // professional websites
-import linkedin from './linkedin.png'
+import linkedin from './linkedin.png';
+
+// video
+
+import Software_dev from "./Software_dev.mp4";
 
 export {
   // projects
@@ -110,14 +120,19 @@ export {
   jquery,
   chai,
   sqlite,
+  python_ascii,
+  js_ascii,
+  sql_ascii,
 
-  // work exp
+  // exp
   cambridge,
   rsc,
   codcademy,
   udemy,
   meta,
   codestars,
+  nucamp,
+  pw_logo,
 
   // general
   backend,
@@ -128,4 +143,6 @@ export {
   menu,
   close,
   linkedin,
+
+  Software_dev,
 };
