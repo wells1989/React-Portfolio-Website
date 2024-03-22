@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="relative mx-auto mt-10 flex flex-col text-center justify-center">
+    <div className="relative mx-auto flex flex-col text-center justify-center">
       <h2 className={`${styles.sectionHeadText}`}>About</h2>
       <ul className={`${styles.heroSubText} leading-20 m-5 p-5 text-xs sm:text-base md:text-lg `}>
         <li>I'm extremely passionate about working with all aspects of development.</li>
