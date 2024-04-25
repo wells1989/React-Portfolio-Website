@@ -57,6 +57,8 @@ import {
     async_scraper,
     expense_tracker,
     marketplace,
+    battlefield,
+    rehab,
   
     web,
     pw_logo,
@@ -362,6 +364,69 @@ import {
   
   const projects = [
     {
+      name: "Flask API sports Rehab App",
+      description:
+        "An injury rehabilitation tracker, using 3 tier architecture and MVC design",
+      tags: [
+        {
+          name: "Python - Flask",
+          color: projectColors.python
+        },
+        {
+          name: "HTML",
+          color: projectColors.html,
+        },
+        {
+          name: "TailwindCSS",
+          color: projectColors.css,
+        },
+        {
+          name: "JavaScript",
+          color: projectColors.javascript,
+        },
+        {
+          name: "PostgreSQL",
+          color: projectColors.sql,
+        },
+      ],
+      image: rehab,
+      source_code_link: "https://github.com/wells1989/rehab_tracker",
+    },
+    {
+      name: "Python multi-player strategy game",
+      description:
+        "A PYGame battlefield game focusing on OOP and event-driven programming",
+      tags: [
+        {
+          name: "Python",
+          color: projectColors.python
+        },
+        {
+          name: "PyGame",
+          color: projectColors.python
+        },
+      ],
+      image: battlefield,
+      source_code_link: "https://github.com/wells1989/Multiplayer-Battlefield-Strategy-Game",
+    },
+    {
+      name: "Python slot machine",
+      description:
+        "Back-End slot machine, with secure user authentication and data persistence",
+      tags: [
+        {
+          name: "python",
+          color: projectColors.python,
+        },
+        {
+          name: "SQLite",
+          color: projectColors.sql,
+        },
+      ],
+      image: slotmachine,
+      source_code_link: "https://github.com/wells1989/Python_slot_machine_programme",
+    },  
+    {
       name: "Django MultiSeller Marketplace",
       description:
         "A Full-Stack app that allows users to sell, purchase and rate products in addition to viewing purchase / sales statistics",
@@ -485,23 +550,6 @@ import {
       image: components,
       source_code_link: "https://github.com/wells1989/Components-React-Project",
     },
-    /*{
-      name: "HTML Homepage",
-      description:
-        "Basic HTML / CSS Homepage under timed conditions.",
-      tags: [
-        {
-          name: "css",
-          color: projectColors.css,
-        },
-        {
-          name: "HTML",
-          color: projectColors.html,
-        },
-      ],
-      image: homepageHTML,
-      source_code_link: "https://github.com/wells1989/HTML-CSS-Basic-Homepage",
-    },*/
     {
       name: "Full Stack Social Media App",
       description:
@@ -722,19 +770,6 @@ import {
       ],
       image: SQL2,
       source_code_link: "https://github.com/wells1989/SQL-School-database-mini-project",
-    },  
-    {
-      name: "Slot machine mini-project",
-      description:
-        "Mini project using Python",
-      tags: [
-        {
-          name: "python",
-          color: projectColors.python,
-        },
-      ],
-      image: slotmachine,
-      source_code_link: "https://github.com/wells1989/Slot-Machine-mini-project",
     },  
     {
       name: "Ufc mini-game",

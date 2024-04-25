@@ -66,6 +66,8 @@ import slotmachine from './slotmachine.jpg';
 import async_scraper from './async_scraper.avif';
 import expense_tracker from './expense_tracker.png';
 import marketplace from './marketplace.png';
+import battlefield from './battlefield.png'
+import rehab from './rehab.png'
 
 // professional websites
 import linkedin from './linkedin.png';
@@ -94,6 +96,8 @@ export {
   async_scraper,
   expense_tracker,
   marketplace,
+  battlefield,
+  rehab,
 
   // technologies
   bootstrap,
