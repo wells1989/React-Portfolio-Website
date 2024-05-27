@@ -14,7 +14,6 @@ import {
 
     // technologies
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -33,7 +32,15 @@ import {
     github,
     jquery,
     chai,
-    sqlite,
+    pytest,
+    docker,
+    kubernetes,
+    AWS,
+    Azure,
+    google_cloud,
+    linux,
+
+    // ascii images
     python_ascii,
     js_ascii,
     sql_ascii,
@@ -46,12 +53,10 @@ import {
     bookingui,
     blog,
     socialmedia,
-    homepageHTML,
     components,
     reduxalbums,
     UFC,
     slotmachine,
-    SQL1,
     SQL2,
     SQL3,
     async_scraper,
@@ -59,6 +64,7 @@ import {
     marketplace,
     battlefield,
     rehab,
+    invoice_manager,
   
     web,
     pw_logo,
@@ -132,10 +138,6 @@ import {
       icon: bootstrap,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -176,16 +178,12 @@ import {
       icon: chai,
     },
     {
-      name: "postgreSQL",
-      icon: postgreSQL,
-    },
-    {
       name: "sql",
       icon: sql,
     },
     {
-      name: "SQLite",
-      icon: sqlite,
+      name: "postgreSQL",
+      icon: postgreSQL,
     },
     {
       name: "github",
@@ -198,7 +196,36 @@ import {
     {
       name: "vsCode",
       icon: vscode,
-    }
+    },
+
+    {
+      name: "Docker",
+      icon: docker,
+    },
+    {
+      name: "Kubernetes",
+      icon: kubernetes,
+    },
+    {
+      name: "AWS",
+      icon: AWS,
+    },
+    {
+      name: "Azure",
+      icon: Azure,
+    },
+    {
+      name: "Google Cloud",
+      icon: google_cloud,
+    },
+    {
+      name: "pytest",
+      icon: pytest,
+    },
+    {
+      name: "Linux",
+      icon: linux,
+    },
   ];
   
   const experiences = [
@@ -207,11 +234,12 @@ import {
       company_name: "NuCamp",
       icon: nucamp,
       iconBg: "#383E56",
-      date: "Ongoing",
+      date: "June 2024",
       points: [
         "Using OOP and event-driven architecture to create dynamic Python programs",
-        "Dynamic Python GUI visualization and customization",
-        "Weekly group collaboration on Back-end projects",
+        "Database normalization, design and maintenance with Postresql",
+        "RESTful APIs with Flask and Django frameworks",
+        "Utilizing CI / CD pipelines in Django web apps and Cloud deployment via AWS, Google Cloud and Azure",
       ],
     },
     {
@@ -363,6 +391,35 @@ import {
   }
   
   const projects = [
+    {
+      name: "3 Tier Django Invoice Manager",
+      description:
+        "A freelance invoice manager using Django API and CI / CD pieplines, deployed via Docker",
+      tags: [
+        {
+          name: "Python - Django",
+          color: projectColors.python
+        },
+        {
+          name: "HTML",
+          color: projectColors.html,
+        },
+        {
+          name: "TailwindCSS",
+          color: projectColors.css,
+        },
+        {
+          name: "JavaScript",
+          color: projectColors.javascript,
+        },
+        {
+          name: "PostgreSQL",
+          color: projectColors.sql,
+        },
+      ],
+      image: invoice_manager,
+      source_code_link: "https://github.com/wells1989/django-invoice-manager",
+    },
     {
       name: "Flask API sports Rehab App",
       description:
