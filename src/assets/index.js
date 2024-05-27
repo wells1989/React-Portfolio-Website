@@ -25,7 +25,6 @@ import sql from "./tech/sql.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import github from "./github.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -34,13 +33,17 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import vscode from "./tech/vscode.png";
 import django from "./tech/django.png";
 import jquery from "./tech/jquery.png";
 import chai from "./tech/chai.png";
-import sqlite from "./tech/sqlite.jpeg";
+import Azure from "./tech/Azure.png";
+import AWS from "./tech/AWS.png";
+import google_cloud from "./tech/google_cloud.png";
+import kubernetes from "./tech/kubernetes.png";
+import linux from "./tech/linux.png";
+import pytest from "./tech/pytest.png";
 
 // ASCII art
 import js_ascii from "./tech/js_ascii_art.png"
@@ -64,10 +67,11 @@ import SQL3 from './SQL3.jpg';
 import UFC from './UFC.png';
 import slotmachine from './slotmachine.jpg';
 import async_scraper from './async_scraper.avif';
-import expense_tracker from './expense_tracker.png';
-import marketplace from './marketplace.png';
-import battlefield from './battlefield.png'
-import rehab from './rehab.png'
+import expense_tracker from './expense_tracker.jpg';
+import marketplace from './marketplace.jpg';
+import battlefield from './battlefield.jpg'
+import rehab from './rehab.jpg'
+import invoice_manager from './invoice_manager.jpg'
 
 // professional websites
 import linkedin from './linkedin.png';
@@ -98,6 +102,7 @@ export {
   marketplace,
   battlefield,
   rehab,
+  invoice_manager,
 
   // technologies
   bootstrap,
@@ -109,7 +114,6 @@ export {
   github,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
@@ -118,12 +122,18 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
   threejs,
   django,
   jquery,
   chai,
-  sqlite,
+  kubernetes,
+  AWS,
+  Azure,
+  google_cloud,
+  linux,
+  pytest,
+
+  // ascii images
   python_ascii,
   js_ascii,
   sql_ascii,
